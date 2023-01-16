@@ -15,10 +15,10 @@ import javax.validation.constraints.NotNull;
 public class CartaoResponseDTO {
 
     @NotNull
-    private String numeroCartao;
+    private String senha;
 
     @NotNull
-    private String senha;
+    private String numeroCartao;
 
     public CartaoResponseDTO(Cartao cartao) {
         this.numeroCartao = cartao.getNumeroCartao();
