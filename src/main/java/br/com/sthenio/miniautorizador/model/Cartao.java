@@ -41,4 +41,7 @@ public class Cartao {
         return new Cartao(cartaoFormDTO);
     }
 
+    public void atualizarSaldo(BigDecimal valor) {
+        this.setSaldo(this.getSaldo().subtract(valor));
+    }
 }

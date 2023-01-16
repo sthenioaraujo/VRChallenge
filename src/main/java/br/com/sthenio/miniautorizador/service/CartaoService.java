@@ -19,8 +19,7 @@ public class CartaoService {
 
         return cartaoRepository.findByNumeroCartao(numeroCartao)
                 .orElseThrow(()->
-                        new CartaoNaoEncontradoException("Número de cartão informado não está cadastrado", numeroCartao
-                        ));
+                        new CartaoNaoEncontradoException("Número de cartão informado não está cadastrado"));
     }
 
     public Cartao adicionarCartao(Cartao cartao) {
