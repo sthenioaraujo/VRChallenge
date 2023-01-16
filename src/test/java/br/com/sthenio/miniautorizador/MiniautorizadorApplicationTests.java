@@ -67,8 +67,8 @@ class MiniautorizadorApplicationTests {
 
 
 		assertEquals(response.getStatusCode(), HttpStatus.CREATED);
-		assertEquals(response.getBody().getNumeroCartao(), "6549873025634501");
-		assertEquals(response.getBody().getSenha(), "1234");
+		assertEquals(response.getBody().getNumeroCartao(), numeroCartao);
+		assertEquals(response.getBody().getSenha(), senha);
 	}
 
 	@Test
@@ -82,8 +82,8 @@ class MiniautorizadorApplicationTests {
 
 
 		assertEquals(response.getStatusCode(), HttpStatus.UNPROCESSABLE_ENTITY);
-		assertEquals(response.getBody().getNumeroCartao(), "6549873025634501");
-		assertEquals(response.getBody().getSenha(), "1234");
+		assertEquals(response.getBody().getNumeroCartao(), numeroCartao);
+		assertEquals(response.getBody().getSenha(), senha);
 	}
 
 	@Test
